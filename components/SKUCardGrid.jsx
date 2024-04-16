@@ -1,4 +1,4 @@
-import { Avatar, Box, Card, Sheet, Typography } from "@mui/joy";
+import { Box, Card, Sheet, Typography } from "@mui/joy";
 import LiquorOutlinedIcon from "@mui/icons-material/LiquorOutlined";
 import styles from "../css/SkuGrid.module.css";
 
@@ -8,10 +8,10 @@ function SKUCard() {
       variant="outlined"
       sx={{
         display: "flex",
+        flexDirection: "column",
         height: "130px",
         width: "130px",
         borderRadius: "15px",
-
         alignItems: "center",
       }}
     >
@@ -25,7 +25,7 @@ function SKUCard() {
           width: "90px",
           alignItems: "center",
           justifyContent: "center",
-          marginTop: "20px",
+          marginTop: "15px",
           borderRadius: "40px",
         }}
       >
@@ -37,6 +37,9 @@ function SKUCard() {
           display: "flex",
           flexDirection: "column",
           width: "100%",
+          justifyContent: "flex-end",
+          marginBottom: "-5px",
+          textAlign: "center",
         }}
       >
         <Typography level="title-sm">Paradon Gin</Typography>

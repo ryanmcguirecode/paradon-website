@@ -4,6 +4,7 @@ import { HeadlineBookDemoButton } from "../components/BookDemoButton";
 import ImageContainer from "../components/ImageContainer";
 import NavBar from "../components/NavBar";
 import SKUCardGrid from "../components/SKUCardGrid";
+import DynamicLinesBox from "../components/DynamicLinesBox";
 import "./globals.css";
 
 export default function Home() {
@@ -52,35 +53,41 @@ export default function Home() {
   );
 
   return (
-    <Box sx={{ width: "100%" }}>
+    <Box
+      sx={{
+        width: "100%",
+      }}
+    >
       <NavBar />
-      {headline}
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          paddingTop: "100px",
-        }}
-      >
-        <ImageContainer width="1250px" height="645px">
-          <Image
-            src="/ui-screenshot.png"
-            fill
-            style={{
-              objectFit: "contain",
-              borderRadius: "25px",
-              border: "1px solid #d7dede",
-            }}
-          />
-        </ImageContainer>
-      </Box>
-      <Box
-        sx={{
-          paddingTop: "200px",
-        }}
-      >
-        <SKUCardGrid />
-      </Box>
+      <DynamicLinesBox>
+        {headline}
+        <Box
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            paddingTop: "100px",
+          }}
+        >
+          <ImageContainer width="1250px" height="645px">
+            <Image
+              src="/ui-screenshot.png"
+              fill
+              style={{
+                objectFit: "contain",
+                borderRadius: "25px",
+                border: "1px solid #d7dede",
+              }}
+            />
+          </ImageContainer>
+        </Box>
+        <Box
+          sx={{
+            paddingTop: "200px",
+          }}
+        >
+          <SKUCardGrid />
+        </Box>
+      </DynamicLinesBox>
     </Box>
   );
 }
