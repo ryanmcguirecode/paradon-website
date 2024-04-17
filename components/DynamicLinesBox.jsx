@@ -23,7 +23,6 @@ export default function DynamicLinesBox({ children }) {
 
     let gradient = [];
     let i = lineSpacing + remainingSpace / 2;
-    console.log(i);
 
     while (i < boxWidth) {
       gradient.push(`#d7dede ${i}px, #d7dede ${i + lineWidth}px`);
