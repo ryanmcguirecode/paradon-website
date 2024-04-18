@@ -5,7 +5,9 @@ import ImageContainer from "../components/ImageContainer";
 import NavBar from "../components/NavBar";
 import SKUCardGrid from "../components/SKUCardGrid";
 import DynamicLinesBox from "../components/DynamicLinesBox";
+import PricingSection from "../components/PricingSection";
 import "./globals.css";
+import AccuracyChart from "@/components/AccuracyChart";
 
 export default function Home() {
   const headline = (
@@ -52,6 +54,28 @@ export default function Home() {
     </Box>
   );
 
+  const uiImage = (
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        paddingTop: "100px",
+      }}
+    >
+      <ImageContainer width="1250px" height="645px">
+        <Image
+          src="/ui-screenshot.png"
+          fill
+          style={{
+            objectFit: "contain",
+            borderRadius: "25px",
+            border: "1px solid #d7dede",
+          }}
+        />
+      </ImageContainer>
+    </Box>
+  );
+
   return (
     <Box
       sx={{
@@ -61,31 +85,36 @@ export default function Home() {
       <NavBar />
       <DynamicLinesBox>
         {headline}
-        <Box
-          sx={{
-            display: "flex",
-            justifyContent: "center",
-            paddingTop: "100px",
-          }}
-        >
-          <ImageContainer width="1250px" height="645px">
-            <Image
-              src="/ui-screenshot.png"
-              fill
-              style={{
-                objectFit: "contain",
-                borderRadius: "25px",
-                border: "1px solid #d7dede",
-              }}
-            />
-          </ImageContainer>
-        </Box>
+        {uiImage}
         <Box
           sx={{
             paddingTop: "200px",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >
           <SKUCardGrid />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "200px",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
+          }}
+        >
+          <AccuracyChart />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "200px",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
+          }}
+        >
+          <PricingSection />
         </Box>
       </DynamicLinesBox>
     </Box>

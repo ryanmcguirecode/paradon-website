@@ -4,9 +4,6 @@ import { Button, Typography } from "@mui/joy";
 import styles from "../css/BookDemoButton.module.css";
 
 export function BookDemoButton() {
-  <button className="px-4 py-2 rounded-md border border-black bg-white text-neutarl-700 text-sm hover:shadow-[4px_4px_0px_0px_rgba(0,0,0)] transition duration-200">
-    Sketch
-  </button>;
   return (
     <Button
       variant="outlined"
@@ -46,5 +43,42 @@ export function HeadlineBookDemoButton() {
         Book a demo
       </Typography>
     </button>
+  );
+}
+
+export function PricingBookDemoButtonDark() {
+  return (
+    <Button
+      variant="outlined"
+      color="neutral"
+      onClick={() => console.log("Book demo button not implemented")}
+      sx={{
+        border: "1px solid black",
+        backgroundColor: "rgb(18, 24, 38)",
+        "&:hover": {
+          backgroundColor: "black", // Change background color on hover
+        },
+        width: "90%",
+      }}
+    >
+      <Typography textColor="white" level="body-md">
+        Book a demo
+      </Typography>
+    </Button>
+  );
+}
+
+export function PricingBookDemoButtonLight() {
+  return (
+    <Button
+      variant="soft"
+      color="neutral"
+      onClick={() => console.log("Book demo button not implemented")}
+      sx={{
+        width: "90%",
+      }}
+    >
+      <Typography level="body-md">Book a demo</Typography>
+    </Button>
   );
 }

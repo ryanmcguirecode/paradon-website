@@ -1,17 +1,19 @@
 html {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
   height: 100%;
+  width: 100%;
   margin: 0;
   padding: 0;
   background-color: rgb(232, 245, 252);
   background-size: 200px 200px;
-  background-image:
-    linear-gradient(to bottom, #d7dede 1px, transparent 1px);
+  /* background-image:
+    linear-gradient(to bottom, #d7dede 1px, transparent 1px); */
 }
 
 #__next {
