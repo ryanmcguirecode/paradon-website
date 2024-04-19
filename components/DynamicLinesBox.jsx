@@ -45,8 +45,8 @@ export default function DynamicLinesBox({ children }) {
       sx={{
         maxWidth: "max-content",
         margin: "auto",
-        // background:
-        //   contentWidth > 0 ? generateBackground(contentWidth) : "none",
+        background:
+          contentWidth > 0 ? generateBackground(contentWidth) : "none",
       }}
     >
       {children}

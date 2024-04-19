@@ -7,7 +7,11 @@ import SKUCardGrid from "../components/SKUCardGrid";
 import DynamicLinesBox from "../components/DynamicLinesBox";
 import PricingSection from "../components/PricingSection";
 import "./globals.css";
-import AccuracyChart from "@/components/AccuracyChart";
+import SolutionSection from "../components/SolutionSection";
+import Integrations from "../components/Integrations";
+import BenefitsSection from "@/components/BenefitsSection";
+import StepSection from "@/components/StepSection";
+import SupportSection from "@/components/SupportSection";
 
 export default function Home() {
   const headline = (
@@ -98,13 +102,79 @@ export default function Home() {
           sx={{
             display: "flex",
             flexDirection: "column",
+            maxWidth: "850px",
+            margin: "auto",
+            alignItems: "center",
+            justifyContent: "center",
+            textAlign: "center",
+            paddingTop: "200px",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
+          }}
+        >
+          <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+            The Solution
+          </Typography>
+          <Typography level="h3" sx={{ fontSize: 55 }}>
+            Paradon AI is a Forecasting Co-Pilot and Command Center
+          </Typography>
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
             alignItems: "center",
             paddingTop: "200px",
             backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >
-          <AccuracyChart />
+          <SolutionSection />
         </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
+          }}
+        >
+          <BenefitsSection />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "200px",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
+          }}
+        >
+          <StepSection />
+        </Box>
+
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "200px",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
+          }}
+        >
+          <Integrations />
+        </Box>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            paddingTop: "200px",
+            backgroundColor: "rgba(232, 245, 252, 0.4)",
+          }}
+        >
+          <SupportSection />
+        </Box>
+
         <Box
           sx={{
             display: "flex",
