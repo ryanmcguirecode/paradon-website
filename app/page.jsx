@@ -12,6 +12,7 @@ import Integrations from "../components/Integrations";
 import BenefitsSection from "@/components/BenefitsSection";
 import StepSection from "@/components/StepSection";
 import SupportSection from "@/components/SupportSection";
+import Divider from "@/components/Divider";
 
 export default function Home() {
   const headline = (
@@ -98,6 +99,7 @@ export default function Home() {
         >
           <SKUCardGrid />
         </Box>
+        <Divider />
         <Box
           sx={{
             display: "flex",
@@ -107,7 +109,6 @@ export default function Home() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            paddingTop: "200px",
             backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >
@@ -118,69 +119,49 @@ export default function Home() {
             Paradon AI is a Forecasting Co-Pilot and Command Center
           </Typography>
         </Box>
-
+        <Divider />
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            paddingTop: "200px",
             backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >
           <SolutionSection />
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            backgroundColor: "rgba(232, 245, 252, 0.4)",
-          }}
-        >
           <BenefitsSection />
-        </Box>
-        <Box
-          sx={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            paddingTop: "200px",
-            backgroundColor: "rgba(232, 245, 252, 0.4)",
-          }}
-        >
           <StepSection />
         </Box>
+
+        <Divider />
 
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            paddingTop: "200px",
             backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >
           <Integrations />
         </Box>
+        <Divider />
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            paddingTop: "200px",
             backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >
           <SupportSection />
         </Box>
-
+        <Divider />
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            paddingTop: "200px",
             backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >

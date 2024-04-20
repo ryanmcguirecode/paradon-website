@@ -127,7 +127,8 @@ export default function Integrations() {
         variant="neutral"
         sx={{ fontSize: 17, paddingTop: "15px" }}
       >
-        We'll integrate with any of your systems, just let us know what you need
+        We{"'"}ll integrate with any of your systems, just let us know what you
+        need
       </Typography>
     </>
   );

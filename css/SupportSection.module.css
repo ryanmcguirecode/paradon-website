@@ -1,8 +1,17 @@
-@keyframes spin {
+@keyframes spinRight {
     from {
       transform: rotate(0deg);
     }
     to {
       transform: rotate(360deg);
+    }
+}
+
+@keyframes spinLeft {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
     }
 }

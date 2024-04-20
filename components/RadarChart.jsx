@@ -26,9 +26,9 @@ import PrecisionManufacturingIcon from "@mui/icons-material/PrecisionManufacturi
 import FactoryIcon from "@mui/icons-material/Factory";
 import WarehouseIcon from "@mui/icons-material/Warehouse";
 
-import { config } from "@fortawesome/fontawesome-svg-core";
-import "@fortawesome/fontawesome-svg-core/styles.css";
-config.autoAddCss = false;
+// import { config } from "@fortawesome/fontawesome-svg-core";
+// import "@fortawesome/fontawesome-svg-core/styles.css";
+// config.autoAddCss = false;
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faGift,
@@ -61,53 +61,111 @@ export default function RadarChart() {
   ];
   const icons = [
     [
-      <FontAwesomeIcon icon={faGift} color="red" fontSize={16} />,
-      <FontAwesomeIcon icon={faGifts} color="red" fontSize={16} />,
-      <FontAwesomeIcon icon={faSleigh} color="red" fontSize={16} />,
-      <FontAwesomeIcon icon={faMenorah} color="blue" fontSize={16} />,
+      <FontAwesomeIcon
+        key="giftIcon"
+        icon={faGift}
+        color="red"
+        fontSize={16}
+      />,
+      <FontAwesomeIcon
+        key="giftsIcon"
+        icon={faGifts}
+        color="red"
+        fontSize={16}
+      />,
+      <FontAwesomeIcon
+        key="sleighIcon"
+        icon={faSleigh}
+        color="red"
+        fontSize={16}
+      />,
+      <FontAwesomeIcon
+        key="menorahIcon"
+        icon={faMenorah}
+        color="blue"
+        fontSize={16}
+      />,
     ],
 
     [
-      <ThunderstormIcon sx={{ color: "darkblue" }} />,
-      <AcUnitIcon sx={{ color: "blue" }} />,
-      <WbSunnyIcon sx={{ color: "orange" }} />,
-      <CloudIcon sx={{ color: "grey" }} />,
+      <ThunderstormIcon key="thunderstormIcon" sx={{ color: "darkblue" }} />,
+      <AcUnitIcon key="acUnitIcon" sx={{ color: "blue" }} />,
+      <WbSunnyIcon key="sunnyIcon" sx={{ color: "orange" }} />,
+      <CloudIcon key="cloudIcon" sx={{ color: "grey" }} />,
     ],
     [
-      <AttachMoneyIcon sx={{ color: "green" }} />,
-      <AccountBalanceIcon sx={{ color: "grey" }} />,
-    ],
-    [<LocalShippingIcon />, <InventoryIcon />],
-    [
-      <StadiumIcon sx={{ color: "red" }} />,
-      <ConfirmationNumberOutlinedIcon />,
-      <EmojiEventsIcon sx={{ color: "gold" }} />,
-      <CelebrationIcon sx={{ color: "orange" }} />,
+      <AttachMoneyIcon key="moneyIcon" sx={{ color: "green" }} />,
+      <AccountBalanceIcon key="balanceIcon" sx={{ color: "grey" }} />,
     ],
     [
-      <PrecisionManufacturingIcon sx={{ color: "grey" }} />,
-      <FactoryIcon sx={{ color: "grey" }} />,
-      <WarehouseIcon sx={{ color: "grey" }} />,
+      <LocalShippingIcon key="shippingIcon" />,
+      <InventoryIcon key="inventoryIcon" />,
     ],
     [
-      <FontAwesomeIcon icon={faTemperatureEmpty} color="blue" fontSize={18} />,
+      <StadiumIcon key="stadiumIcon" sx={{ color: "red" }} />,
+      <ConfirmationNumberOutlinedIcon key="confirmationIcon" />,
+      <EmojiEventsIcon key="eventIcon" sx={{ color: "gold" }} />,
+      <CelebrationIcon key="celebrationIcon" sx={{ color: "orange" }} />,
+    ],
+    [
+      <PrecisionManufacturingIcon
+        key="manufacturingIcon"
+        sx={{ color: "grey" }}
+      />,
+      <FactoryIcon key="factoryIcon" sx={{ color: "grey" }} />,
+      <WarehouseIcon key="warehouseIcon" sx={{ color: "grey" }} />,
+    ],
+    [
       <FontAwesomeIcon
+        key="tempEmptyIcon"
+        icon={faTemperatureEmpty}
+        color="blue"
+        fontSize={18}
+      />,
+      <FontAwesomeIcon
+        key="tempQuarterIcon"
         icon={faTemperatureQuarter}
         color="blue"
         fontSize={18}
       />,
-      <FontAwesomeIcon icon={faTemperatureHalf} color="orange" fontSize={18} />,
       <FontAwesomeIcon
+        key="tempHalfIcon"
+        icon={faTemperatureHalf}
+        color="orange"
+        fontSize={18}
+      />,
+      <FontAwesomeIcon
+        key="tempThreeQuarterIcon"
         icon={faTemperatureThreeQuarters}
         color="red"
         fontSize={18}
       />,
-      <FontAwesomeIcon icon={faTemperatureFull} color="red" fontSize={18} />,
+      <FontAwesomeIcon
+        key="tempFullIcon"
+        icon={faTemperatureFull}
+        color="red"
+        fontSize={18}
+      />,
     ],
     [
-      <FontAwesomeIcon icon={faInstagram} color="purple" fontSize={20} />,
-      <FontAwesomeIcon icon={faTwitter} color="blue" fontSize={20} />,
-      <FontAwesomeIcon icon={faFacebook} color="blue" fontSize={20} />,
+      <FontAwesomeIcon
+        key="igIcon"
+        icon={faInstagram}
+        color="purple"
+        fontSize={20}
+      />,
+      <FontAwesomeIcon
+        key="twitterIcon"
+        icon={faTwitter}
+        color="blue"
+        fontSize={20}
+      />,
+      <FontAwesomeIcon
+        key="facebookIcon"
+        icon={faFacebook}
+        color="blue"
+        fontSize={20}
+      />,
     ],
   ];
   const animationLength = 6;

@@ -1,25 +1,123 @@
-import { Box, Typography } from "@mui/joy";
+import { Box, Stack, Typography } from "@mui/joy";
+
+const stepHeight = 60;
+const stepSpace = 60;
+
+const Step = ({ stepNumber, children }) => (
+  <Box
+    sx={{
+      display: "flex",
+      flexDirection: "row",
+      position: "relative",
+      paddingBottom: stepSpace + "px",
+    }}
+  >
+    <Box
+      sx={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        border: "1px solid #d7dede",
+        borderRadius: "100%",
+        width: stepHeight + "px",
+        height: stepHeight + "px",
+        padding: "10px",
+        backgroundColor: "rgb(232, 245, 252)",
+        zIndex: 2,
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: stepHeight + "px",
+          height: stepHeight + "px",
+          borderRadius: "100%",
+          backgroundColor: "rgba(249, 251, 254)",
+          boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
+          border: "1px solid #d7dede",
+        }}
+      >
+        <Typography level="h4" sx={{ fontSize: 25 }}>
+          {stepNumber}
+        </Typography>
+      </Box>
+    </Box>
+    <Box
+      sx={{
+        paddingLeft: "40px",
+      }}
+    >
+      {children}
+    </Box>
+    {stepNumber < 3 && (
+      <Box
+        sx={{
+          height: "100%",
+          borderLeft: "4px dotted #d7dede",
+          marginLeft: "40px",
+          position: "absolute",
+          zIndex: 1,
+        }}
+      />
+    )}
+  </Box>
+);
 
 export default function StepSection() {
   return (
-    <Box
-      sx={{
-        width: "100%",
-        display: "flex",
-        flexDirection: "column",
-        gap: "20px",
-        justifyContent: "center",
-        alignItems: "center",
-        margin: "auto",
-        marginTop: "40px",
-        boxSizing: "border-box",
-        backgroundColor: "#e8f5fc",
-        padding: "10px",
-      }}
-    >
-      <Typography>Step 1</Typography>
-      <Typography>Step 2</Typography>
-      <Typography>Step 3</Typography>
+    <Box sx={{ display: "flex", width: "100%" }}>
+      <Box
+        sx={{
+          flex: 1,
+          width: "100%",
+          maxWidth: "600px",
+          display: "flex",
+          flexDirection: "column",
+          margin: "auto",
+          marginTop: "40px",
+          boxSizing: "border-box",
+        }}
+      >
+        <Step stepNumber={1}>
+          <Typography
+            level="h4"
+            sx={{ fontSize: 25, lineHeight: "30px", paddingBottom: "12px" }}
+          >
+            We ingest your POS and ordering data
+          </Typography>
+          <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+            We take in your data in any format, and transform it with our
+            proprietary data pipeline.
+          </Typography>
+        </Step>
+        <Step stepNumber={2}>
+          <Typography
+            level="h4"
+            sx={{ fontSize: 25, lineHeight: "30px", paddingBottom: "12px" }}
+          >
+            We build a custom preditiction model for your business
+          </Typography>
+          <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+            The best performing model is custom-tailored. We use your data and
+            augment it with other relevant sources to deliver region and
+            store-specific predictions.
+          </Typography>
+        </Step>
+        <Step stepNumber={3}>
+          <Typography
+            level="h4"
+            sx={{ fontSize: 25, lineHeight: "30px", paddingBottom: "12px" }}
+          >
+            We show you how much you can save
+          </Typography>
+          <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+            We{"'"}ll run our model on your historical sales data to show you
+            how much profit you can generate with us.
+          </Typography>
+        </Step>
+      </Box>
     </Box>
   );
 }
