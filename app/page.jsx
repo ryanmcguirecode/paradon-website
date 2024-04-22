@@ -119,7 +119,7 @@ export default function Home() {
             Paradon AI is a Forecasting Co-Pilot and Command Center
           </Typography>
         </Box>
-        <Divider />
+        {/* <Divider /> */}
         <Box
           sx={{
             display: "flex",
@@ -129,7 +129,8 @@ export default function Home() {
           }}
         >
           <SolutionSection />
-          <BenefitsSection />
+          {/* <BenefitsSection /> */}
+          <Box sx={{ height: "40px" }} /> {/* Temporary Spacer */}
           <StepSection />
         </Box>
 
