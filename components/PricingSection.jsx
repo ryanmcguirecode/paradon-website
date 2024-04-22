@@ -1,24 +1,10 @@
+"use client"; // Have to use becasue of the `CheckCircleIcon` component, should fix later
 import { Box, Typography } from "@mui/joy";
 import CheckCircleIcon from "@mui/icons-material/CheckCircle";
 import {
   PricingBookDemoButtonDark,
   PricingBookDemoButtonLight,
 } from "./BookDemoButton";
-
-const startSectionChecklist = [
-  "Custom Model Training and Demo",
-  "Integration with ERP + Other Systems",
-  "Trial and Adjustment Period",
-  "Custom Configuration",
-  "24/7 Support",
-];
-const enterpriseSectionChecklist = [
-  "Custom Model Training",
-  "Integration with ERP + Other Systems",
-  "Continuous Model Adjustment and Tuning",
-  "Custom Configuration",
-  "24/7 Support",
-];
 
 const LightColors = {
   backgroundColor: "rgb(249, 251, 254)",
@@ -35,7 +21,7 @@ const LightColors = {
     "Custom Configuration",
     "24/7 Support",
   ],
-  button: <PricingBookDemoButtonDark />,
+  button: "dark",
 };
 
 const DarkColors = {
@@ -53,7 +39,7 @@ const DarkColors = {
     "Custom Configuration",
     "24/7 Support",
   ],
-  button: <PricingBookDemoButtonLight />,
+  button: "light",
 };
 
 function PricingColumn({ variant }) {
@@ -111,7 +97,11 @@ function PricingColumn({ variant }) {
           justifyContent: "center",
         }}
       >
-        {variant.button}
+        {variant.button === "light" ? (
+          <PricingBookDemoButtonLight />
+        ) : (
+          <PricingBookDemoButtonDark />
+        )}
       </Box>
     </Box>
   );

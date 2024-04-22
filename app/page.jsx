@@ -7,7 +7,7 @@ import SKUCardGrid from "../components/SKUCardGrid";
 import DynamicLinesBox from "../components/DynamicLinesBox";
 import PricingSection from "../components/PricingSection";
 import "./globals.css";
-import SolutionSection from "../components/SolutionSection";
+// import SolutionSection from "../components/SolutionSection";
 import Integrations from "../components/Integrations";
 import BenefitsSection from "@/components/BenefitsSection";
 import StepSection from "@/components/StepSection";
@@ -128,7 +128,7 @@ export default function Home() {
             backgroundColor: "rgba(232, 245, 252, 0.4)",
           }}
         >
-          <SolutionSection />
+          {/* <SolutionSection /> */}
           {/* <BenefitsSection /> */}
           <Box sx={{ height: "40px" }} /> {/* Temporary Spacer */}
           <StepSection />
