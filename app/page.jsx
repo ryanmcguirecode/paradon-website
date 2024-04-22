@@ -169,6 +169,7 @@ export default function Home() {
           <PricingSection />
         </Box>
       </DynamicLinesBox>
+      <Box sx={{ height: "200px" }}></Box>
     </Box>
   );
 }

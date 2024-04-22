@@ -39,7 +39,7 @@ export default function Integrations() {
       <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
         Integrations
       </Typography>
-      <Typography level="h3" sx={{ fontSize: 55 }}>
+      <Typography level="h3" sx={{ fontSize: 55, textAlign: "center" }}>
         Paradon Works with your Existing Systems
       </Typography>
       <Box

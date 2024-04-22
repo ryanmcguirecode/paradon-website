@@ -6,55 +6,60 @@ export default function Divider() {
   return (
     <Box
       sx={{
-        display: "flex",
-        boxSizing: "border-box",
-        position: "relative",
-        width: "100%",
-        height: "15px",
-        marginTop: "150px",
-        marginBottom: "150px",
+        backgroundColor: "rgba(232, 245, 252, 0.4)",
+        paddingTop: "150px",
+        paddingBottom: "150px",
       }}
     >
-      <Box sx={{ flex: 1, position: "relative" }}>
-        <Image
-          src="/arrows.png"
-          fill
-          style={{
-            objectFit: "contain",
-          }}
-        />
-      </Box>
       <Box
         sx={{
-          position: "absolute",
-          left: "50%",
-          top: "50%",
-          transform: "translate(-50%, -50%)",
-        }}
-      >
-        <Image
-          src="/arrow.png"
-          height={24}
-          width={17}
-          style={{ animation: `${styles.pulse} 3s infinite` }}
-        />
-      </Box>
-      <Box
-        sx={{
-          flex: 1,
+          display: "flex",
+          boxSizing: "border-box",
           position: "relative",
-          zIndex: 2,
+          width: "100%",
+          height: "15px",
         }}
       >
-        <Image
-          src="/arrows-reverse.png"
-          fill
-          style={{
-            objectFit: "contain",
+        <Box sx={{ flex: 1, position: "relative" }}>
+          <Image
+            src="/arrows.png"
+            fill
+            style={{
+              objectFit: "contain",
+            }}
+          />
+        </Box>
+        <Box
+          sx={{
+            position: "absolute",
+            left: "50%",
+            top: "50%",
+            transform: "translate(-50%, -50%)",
           }}
-        />
-      </Box>
-      {/* <Box
+        >
+          <Image
+            src="/arrow.png"
+            height={24}
+            width={17}
+            style={{ animation: `${styles.pulse} 3s infinite` }}
+          />
+        </Box>
+        <Box
+          sx={{
+            flex: 1,
+            position: "relative",
+            zIndex: 2,
+          }}
+        >
+          <Image
+            src="/arrows-reverse.png"
+            fill
+            style={{
+              objectFit: "contain",
+            }}
+          />
+        </Box>
+        {/* <Box
         sx={{
           width: "100%",
           borderTop: "1px solid #d7dede",
@@ -65,6 +70,7 @@ export default function Divider() {
           zIndex: 1,
         }}
       /> */}
+      </Box>
     </Box>
   );
 }

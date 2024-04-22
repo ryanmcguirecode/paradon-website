@@ -359,8 +359,14 @@ export default function SKUCardGrid() {
       <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
         The Problem
       </Typography>
-      <Typography level="h3" sx={{ fontSize: 55 }}>
-        Millions of SKUs
+      <Typography
+        level="h3"
+        sx={{ fontSize: 55, maxWidth: "800px", textAlign: "center" }}
+      >
+        Forecasting is Hard
+      </Typography>
+      <Typography level="body" sx={{ fontSize: 24, paddingTop: "12px" }}>
+        Especially with millions of SKUs and dynamic markets
       </Typography>
       <Box
         sx={{
