@@ -1,9 +1,24 @@
 "use client";
-import Chart from "react-apexcharts";
+
+import { useEffect, useState } from "react";
 import { Box, Typography, Option, Select } from "@mui/joy";
-import RadarChart from "./RadarChart";
 
 function AccuracyChart() {
+  const [ChartComponent, setChartComponent] = useState(null);
+
+  // Conditional import of react-apexcharts to fix self not defined error (same as above)
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      import("react-apexcharts")
+        .then((ApexChart) => {
+          setChartComponent(() => ApexChart.default);
+        })
+        .catch((error) =>
+          console.error("Failed to load react-apexcharts", error)
+        );
+    }
+  }, []);
+
   const options = {
     series: [
       {
@@ -80,18 +95,34 @@ function AccuracyChart() {
           <Option value="2023">2023</Option>
         </Select>
       </Box>
-      <Chart
-        options={options}
-        series={options.series}
-        type="line"
-        height={350}
-        width={500}
-      />
+      {ChartComponent && (
+        <ChartComponent
+          options={options}
+          series={options.series}
+          type="line"
+          height={350}
+          width={500}
+        />
+      )}
     </Box>
   );
 }
 
 export default function SolutionSection() {
+  const [RadarComponent, setRadarComponent] = useState(null);
+
+  // Conditional import of react-apexcharts to fix window not defined error
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      // Importing dynamically and ensuring that we capture the default export correctly
+      import("./RadarChart")
+        .then((RadarChart) => {
+          setRadarComponent(() => RadarChart.default); // Make sure to capture the default export correctly
+        })
+        .catch((error) => console.error("Failed to load radar chart", error));
+    }
+  }, []);
+
   return (
     <>
       <Box
@@ -114,7 +145,7 @@ export default function SolutionSection() {
           }}
         >
           <AccuracyChart />
-          <RadarChart />
+          {RadarComponent && <RadarComponent />}
         </Box>
       </Box>
     </>

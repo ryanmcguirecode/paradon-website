@@ -337,10 +337,12 @@ export default function SKUCardGrid() {
 
   useEffect(() => {
     calculateNumberOfCards();
-    window.addEventListener("resize", calculateNumberOfCards);
-    return () => {
-      window.removeEventListener("resize", calculateNumberOfCards);
-    };
+    if (typeof window !== "undefined") {
+      window.addEventListener("resize", calculateNumberOfCards);
+      return () => {
+        window.removeEventListener("resize", calculateNumberOfCards);
+      };
+    }
   }, []);
 
   return (
