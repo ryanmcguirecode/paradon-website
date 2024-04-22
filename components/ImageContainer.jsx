@@ -10,7 +10,7 @@ export default function ImageContainer({ width, height, children }) {
         border: "1px solid #d7dede",
         borderRadius: "40px",
         boxSizing: "border-box",
-        backgroundColor: "#e8f5fc",
+        backgroundColor: "rgb(242, 249, 254)",
       }}
     >
       <Box
@@ -21,7 +21,7 @@ export default function ImageContainer({ width, height, children }) {
           border: "1px solid #d7dede",
           borderRadius: "35px",
           boxSizing: "border-box",
-          backgroundColor: "#dbeffa",
+          backgroundColor: "rgb(233, 245, 252)",
         }}
       >
         <div

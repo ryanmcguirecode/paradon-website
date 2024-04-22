@@ -10,7 +10,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  background-color: rgb(232, 245, 252);
+  background-color: rgb(241, 249, 253);
   background-size: 100vw 301px, 33.3vw 100vh;
   background-image:
     linear-gradient(to bottom, #d7dede 1px, transparent 1px),

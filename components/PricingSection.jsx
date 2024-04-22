@@ -121,7 +121,7 @@ export default function PricingSection() {
           display: "flex",
           margin: "auto",
           gap: "8px",
-          backgroundColor: "rgba(232, 245, 252, 0.4)",
+          backgroundColor: "rgba(241, 249, 253, 0.4)",
           marginTop: "40px",
           border: "1px solid #d7dede",
           borderRadius: "15px",

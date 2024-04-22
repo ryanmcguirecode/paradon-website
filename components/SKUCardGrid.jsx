@@ -352,7 +352,7 @@ export default function SKUCardGrid() {
         width: "100%",
         display: "flex",
         flexDirection: "column",
-        backgroundColor: "rgba(232, 245, 252, 0.4)",
+        backgroundColor: "rgba(241, 249, 253, 0.4)",
         alignItems: "center",
       }}
     >

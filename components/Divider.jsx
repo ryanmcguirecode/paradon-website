@@ -6,7 +6,7 @@ export default function Divider() {
   return (
     <Box
       sx={{
-        backgroundColor: "rgba(232, 245, 252, 0.4)",
+        backgroundColor: "rgba(241, 249, 253, 0.4)",
         paddingTop: "150px",
         paddingBottom: "150px",
       }}
@@ -59,17 +59,6 @@ export default function Divider() {
             }}
           />
         </Box>
-        {/* <Box
-        sx={{
-          width: "100%",
-          borderTop: "1px solid #d7dede",
-          marginLeft: "40px",
-          position: "absolute",
-          top: "50%",
-          left: "0%",
-          zIndex: 1,
-        }}
-      /> */}
       </Box>
     </Box>
   );

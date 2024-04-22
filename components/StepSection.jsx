@@ -22,7 +22,7 @@ const Step = ({ stepNumber, children }) => (
         width: stepHeight + "px",
         height: stepHeight + "px",
         padding: "10px",
-        backgroundColor: "rgb(232, 245, 252)",
+        backgroundColor: "rgb(241, 249, 253)",
         zIndex: 2,
       }}
     >
