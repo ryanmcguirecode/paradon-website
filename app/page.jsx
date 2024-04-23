@@ -1,86 +1,21 @@
-import Image from "next/image";
-import { Box, Typography } from "@mui/joy";
-import { HeadlineBookDemoButton } from "../components/BookDemoButton";
-import ImageContainer from "../components/ImageContainer";
-import NavBar from "../components/NavBar";
-import SKUCardGrid from "../components/SKUCardGrid";
-import DynamicLinesBox from "../components/DynamicLinesBox";
-import PricingSection from "../components/PricingSection";
 import "./globals.css";
-import SolutionSection from "../components/SolutionSection";
-import Integrations from "../components/Integrations";
+import { Box, Typography } from "@mui/joy";
+
+import NavBar from "@/components/NavBar";
+import SKUCardGrid from "@/components/SKUCardGrid";
+import DynamicLinesBox from "@/components/DynamicLinesBox";
+import PricingSection from "@/components/PricingSection";
+import SolutionSection from "@/components/SolutionSection";
+import Integrations from "@/components/Integrations";
 import BenefitsSection from "@/components/BenefitsSection";
 import StepSection from "@/components/StepSection";
 import SupportSection from "@/components/SupportSection";
 import Divider from "@/components/Divider";
+import Footer from "@/components/Footer";
+import HeroImage from "@/components/HeroImage";
+import HeroHeadline from "@/components/HeroHeadline";
 
 export default function Home() {
-  const headline = (
-    <Box
-      sx={{
-        // backgroundColor: "rgba(241, 249, 253, 0.4)",
-        maxWidth: "800px",
-        margin: "auto",
-        paddingTop: "130px",
-      }}
-    >
-      <Typography
-        level="h3"
-        sx={{
-          margin: "auto",
-          textAlign: "center",
-          fontSize: "75px",
-          lineHeight: "85px",
-        }}
-      >
-        Industry Leading Demand Forecasting
-      </Typography>
-      <Typography
-        level="body-lg"
-        sx={{
-          maxWidth: "500px",
-          margin: "auto",
-          textAlign: "center",
-          paddingTop: "8px",
-        }}
-      >
-        Explainable AI and actionable insights to improve your forecasting and
-        bottom line.
-      </Typography>
-      <Box
-        sx={{
-          display: "flex",
-          justifyContent: "center",
-          paddingTop: "30px",
-        }}
-      >
-        <HeadlineBookDemoButton />
-      </Box>
-    </Box>
-  );
-
-  const uiImage = (
-    <Box
-      sx={{
-        display: "flex",
-        justifyContent: "center",
-        paddingTop: "100px",
-      }}
-    >
-      <ImageContainer width="1230px" height="630px">
-        <Image
-          src="/ui-screenshot.png"
-          fill
-          style={{
-            objectFit: "cover",
-            borderRadius: "15px",
-            // border: "1px solid #d7dede",
-          }}
-        />
-      </ImageContainer>
-    </Box>
-  );
-
   return (
     <Box
       sx={{
@@ -89,12 +24,11 @@ export default function Home() {
     >
       <NavBar />
       <DynamicLinesBox>
-        {headline}
-        {uiImage}
+        <HeroHeadline />
+        <HeroImage />
         <Box
           sx={{
             paddingTop: "200px",
-            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <SKUCardGrid />
@@ -109,7 +43,6 @@ export default function Home() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
@@ -119,18 +52,16 @@ export default function Home() {
             Paradon AI is a Forecasting Co-Pilot and Command Center
           </Typography>
         </Box>
-        {/* <Divider /> */}
         <Box
           sx={{
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <SolutionSection />
+          <Box sx={{ height: "40px" }} />
           {/* <BenefitsSection /> */}
-          <Box sx={{ height: "40px" }} /> {/* Temporary Spacer */}
           <StepSection />
         </Box>
 
@@ -141,7 +72,6 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <Integrations />
@@ -152,7 +82,6 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <SupportSection />
@@ -163,13 +92,12 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <PricingSection />
         </Box>
       </DynamicLinesBox>
-      <Box sx={{ height: "200px" }}></Box>
+      <Footer />
     </Box>
   );
 }

@@ -4,27 +4,9 @@ import Image from "next/image";
 import { Box, Typography } from "@mui/joy";
 import SignInButton from "./SignInButton";
 import { BookDemoButton } from "./BookDemoButton";
+import Logo from "./Logo";
 
 export default function NavBar() {
-  const logo = (
-    <Box
-      onClick={() => window.location.replace("/")}
-      sx={{
-        display: "flex",
-        alignItems: "center",
-        cursor: "pointer",
-      }}
-    >
-      <Image
-        src="/logo.png"
-        width={23}
-        height={23}
-        style={{ paddingRight: "5px" }}
-      />
-      <Typography level="h4">Paradon</Typography>
-    </Box>
-  );
-
   return (
     <Box
       sx={{
@@ -47,7 +29,7 @@ export default function NavBar() {
           justifyContent: "space-between",
         }}
       >
-        {logo}
+        <Logo />
         <Box sx={{ display: "flex", gap: "10px" }}>
           <SignInButton />
           <BookDemoButton />

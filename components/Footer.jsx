@@ -1,0 +1,63 @@
+import { Box, Typography } from "@mui/joy";
+import Logo from "@/components/Logo";
+import SubmitEmailComponent from "@/components/SubmitEmailComponent";
+
+export default function Footer() {
+  return (
+    <Box
+      sx={{
+        width: "100%",
+        height: "200px",
+        marginTop: "100px",
+        position: "relative",
+        backgroundColor: "rgba(255, 255, 255, 0.8)",
+        boxShadow: "0 -4px 6px rgba(0, 0, 0, 0.1)",
+        zIndex: 1000,
+      }}
+    >
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          maxWidth: "850px",
+          paddingTop: "25px",
+          margin: "auto",
+        }}
+      >
+        <Box>
+          <Logo />
+          <Typography
+            level="title-md"
+            variant="neutral"
+            sx={{ paddingTop: "10px" }}
+          >
+            Increase fill rate. Decrease stock outs.
+          </Typography>
+        </Box>
+        <Box>
+          <Typography level="body-md" sx={{ marginBottom: "5px" }}>
+            Want us to reach out?
+          </Typography>
+          <SubmitEmailComponent />
+        </Box>
+      </Box>
+
+      <Box
+        sx={{
+          display: "flex",
+          justifyContent: "space-between",
+          maxWidth: "850px",
+          margin: "auto",
+          paddingTop: "65px",
+        }}
+      >
+        <Typography level="body-md" variant="neutral">
+          2620 Hillegass Ave, Berkeley, CA 94704
+        </Typography>
+        <Typography level="body-md" variant="neutral">
+          © 2024 Paradon AI
+        </Typography>
+      </Box>
+    </Box>
+  );
+}
