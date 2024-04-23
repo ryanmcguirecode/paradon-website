@@ -35,7 +35,11 @@ export default function Footer() {
           </Typography>
         </Box>
         <Box>
-          <Typography level="body-md" sx={{ marginBottom: "5px" }}>
+          <Typography
+            level="title-md"
+            variant="neutral"
+            sx={{ marginBottom: "5px" }}
+          >
             Want us to reach out?
           </Typography>
           <SubmitEmailComponent />
