@@ -6,7 +6,14 @@ export default function SignInButton() {
     <Button
       variant="outlined"
       color="neutral"
-      onClick={() => console.log("Sign in button not implemented")}
+      // Temporary leads to book demo instead of sign in
+      onClick={() =>
+        window.open(
+          "https://calendly.com/sales-sajr/30min",
+          "_blank",
+          "noopener,noreferrer"
+        )
+      }
       sx={{ border: "1px solid rgb(227, 232, 240)" }}
     >
       Sign in

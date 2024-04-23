@@ -7,7 +7,14 @@ import { BookDemoButton } from "./BookDemoButton";
 
 export default function NavBar() {
   const logo = (
-    <Box sx={{ display: "flex", alignItems: "center" }}>
+    <Box
+      onClick={() => window.location.replace("/")}
+      sx={{
+        display: "flex",
+        alignItems: "center",
+        cursor: "pointer",
+      }}
+    >
       <Image
         src="/logo.png"
         width={23}

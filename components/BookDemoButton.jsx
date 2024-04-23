@@ -3,12 +3,20 @@ import { useState } from "react";
 import { Button, Typography } from "@mui/joy";
 import styles from "../css/BookDemoButton.module.css";
 
+function navigateToBookDemo() {
+  window.open(
+    "https://calendly.com/sales-sajr/30min",
+    "_blank",
+    "noopener,noreferrer"
+  );
+}
+
 export function BookDemoButton() {
   return (
     <Button
       variant="outlined"
       color="neutral"
-      onClick={() => console.log("Book demo button not implemented")}
+      onClick={navigateToBookDemo}
       sx={{
         border: "1px solid black",
         backgroundColor: "black",
@@ -30,6 +38,7 @@ export function HeadlineBookDemoButton() {
   return (
     <button
       className={styles.demoButton}
+      onClick={navigateToBookDemo}
       onMouseEnter={() => setHover(true)}
       onMouseLeave={() => setHover(false)}
     >
@@ -51,7 +60,7 @@ export function PricingBookDemoButtonDark() {
     <Button
       variant="outlined"
       color="neutral"
-      onClick={() => console.log("Book demo button not implemented")}
+      onClick={navigateToBookDemo}
       sx={{
         border: "1px solid black",
         backgroundColor: "rgb(18, 24, 38)",
@@ -73,7 +82,7 @@ export function PricingBookDemoButtonLight() {
     <Button
       variant="soft"
       color="neutral"
-      onClick={() => console.log("Book demo button not implemented")}
+      onClick={navigateToBookDemo}
       sx={{
         width: "90%",
       }}
