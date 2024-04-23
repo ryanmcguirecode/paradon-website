@@ -48,7 +48,7 @@ export default function Integrations() {
           justifyContent: "center",
           alignItems: "center",
           margin: "auto",
-          backgroundColor: "rgba(241, 249, 253, 0.4)",
+          // backgroundColor: "rgba(241, 249, 253, 0.4)",
           marginTop: "40px",
           boxSizing: "border-box",
           padding: "10px",

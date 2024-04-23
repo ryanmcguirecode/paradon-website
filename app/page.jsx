@@ -18,7 +18,7 @@ export default function Home() {
   const headline = (
     <Box
       sx={{
-        backgroundColor: "rgba(241, 249, 253, 0.4)",
+        // backgroundColor: "rgba(241, 249, 253, 0.4)",
         maxWidth: "800px",
         margin: "auto",
         paddingTop: "130px",
@@ -44,8 +44,8 @@ export default function Home() {
           paddingTop: "8px",
         }}
       >
-        Cutting-edge AI, Explainability, and Actionable Insights to improve your
-        forecasting and bottom line.
+        Explainable AI and actionable insights to improve your forecasting and
+        bottom line.
       </Typography>
       <Box
         sx={{
@@ -67,14 +67,14 @@ export default function Home() {
         paddingTop: "100px",
       }}
     >
-      <ImageContainer width="1250px" height="645px">
+      <ImageContainer width="1230px" height="630px">
         <Image
           src="/ui-screenshot.png"
           fill
           style={{
-            objectFit: "contain",
-            borderRadius: "25px",
-            border: "1px solid #d7dede",
+            objectFit: "cover",
+            borderRadius: "15px",
+            // border: "1px solid #d7dede",
           }}
         />
       </ImageContainer>
@@ -94,7 +94,7 @@ export default function Home() {
         <Box
           sx={{
             paddingTop: "200px",
-            backgroundColor: "rgba(241, 249, 253, 0.4)",
+            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <SKUCardGrid />
@@ -109,7 +109,7 @@ export default function Home() {
             alignItems: "center",
             justifyContent: "center",
             textAlign: "center",
-            backgroundColor: "rgba(241, 249, 253, 0.4)",
+            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
@@ -125,7 +125,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            backgroundColor: "rgba(241, 249, 253, 0.4)",
+            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <SolutionSection />
@@ -141,7 +141,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            backgroundColor: "rgba(241, 249, 253, 0.4)",
+            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <Integrations />
@@ -152,7 +152,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            backgroundColor: "rgba(241, 249, 253, 0.4)",
+            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <SupportSection />
@@ -163,7 +163,7 @@ export default function Home() {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            backgroundColor: "rgba(241, 249, 253, 0.4)",
+            // backgroundColor: "rgba(241, 249, 253, 0.4)",
           }}
         >
           <PricingSection />

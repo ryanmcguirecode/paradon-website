@@ -75,6 +75,7 @@ function AccuracyChart() {
     <Box
       sx={{
         border: "1px solid #d7dede",
+        backgroundColor: "white",
         borderRadius: "10px",
         padding: "5px",
         backgroundColor: "rgb(249, 251, 254)",
@@ -129,7 +130,7 @@ export default function SolutionSection() {
         sx={{
           display: "flex",
           margin: "auto",
-          backgroundColor: "rgba(241, 249, 253, 0.4)",
+          // backgroundColor: "rgba(241, 249, 253, 0.4)",
           marginTop: "40px",
           border: "1px solid #d7dede",
           borderRadius: "15px",

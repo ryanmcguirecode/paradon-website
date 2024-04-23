@@ -122,7 +122,7 @@ export default function SupportSection() {
           height: 440,
           border: "1px solid #d7dede",
           borderRadius: "10px",
-          backgroundColor: "rgb(249, 251, 254)",
+          backgroundColor: "white",
           position: "relative",
           marginTop: "50px",
           zIndex: 3,

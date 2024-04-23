@@ -6,7 +6,7 @@ export default function Divider() {
   return (
     <Box
       sx={{
-        backgroundColor: "rgba(241, 249, 253, 0.4)",
+        // backgroundColor: "rgba(241, 249, 253, 0.4)",
         paddingTop: "150px",
         paddingBottom: "150px",
       }}

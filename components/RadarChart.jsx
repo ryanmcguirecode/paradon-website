@@ -243,6 +243,7 @@ export default function RadarChart() {
       sx={{
         width: 440,
         height: 440,
+        backgroundColor: "white",
         border: "1px solid #d7dede",
         borderRadius: "10px",
         padding: "5px",

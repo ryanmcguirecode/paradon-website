@@ -22,7 +22,7 @@ const Step = ({ stepNumber, children }) => (
         width: stepHeight + "px",
         height: stepHeight + "px",
         padding: "10px",
-        backgroundColor: "rgb(241, 249, 253)",
+        backgroundColor: "rgb(247, 251, 253)",
         zIndex: 2,
       }}
     >
@@ -97,7 +97,7 @@ export default function StepSection() {
             level="h4"
             sx={{ fontSize: 25, lineHeight: "30px", paddingBottom: "12px" }}
           >
-            We build a custom preditiction model for your business
+            We build a custom prediction model for your business
           </Typography>
           <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
             The best performing model is custom-tailored. We use your data and
