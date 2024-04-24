@@ -171,9 +171,9 @@ export default function SolutionSection() {
                 paddingBottom: "10px",
               }}
             >
-              We've achieved near-perfect accuracy for our clients, and we can
-              do the same for you. We'll prove it by running our model on your
-              historical sales data.
+              We{"'"}ve achieved near-perfect accuracy for our clients, and we
+              can do the same for you. We{"'"}ll prove it by running our model
+              on your historical sales data.
             </Typography>
           </Box>
           <Box sx={{ width: 500, paddingRight: "13px", textAlign: "center" }}>
