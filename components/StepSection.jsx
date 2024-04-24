@@ -72,22 +72,27 @@ export default function StepSection() {
         sx={{
           flex: 1,
           width: "100%",
-          maxWidth: "600px",
+          maxWidth: "800px",
           display: "flex",
           flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
           margin: "auto",
-          marginTop: "40px",
           boxSizing: "border-box",
+          borderRadius: "20px",
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          // boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         }}
       >
         <Step stepNumber={1}>
           <Typography
             level="h4"
-            sx={{ fontSize: 25, lineHeight: "30px", paddingBottom: "12px" }}
+            sx={{ fontSize: 35, lineHeight: "40px", paddingBottom: "12px" }}
           >
             We ingest your POS and ordering data
           </Typography>
-          <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+          <Typography level="body" variant="neutral" sx={{ fontSize: 22 }}>
             We take in your data in any format, and transform it with our
             proprietary data pipeline.
           </Typography>
@@ -95,11 +100,11 @@ export default function StepSection() {
         <Step stepNumber={2}>
           <Typography
             level="h4"
-            sx={{ fontSize: 25, lineHeight: "30px", paddingBottom: "12px" }}
+            sx={{ fontSize: 35, lineHeight: "40px", paddingBottom: "12px" }}
           >
             We build a custom prediction model for your business
           </Typography>
-          <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+          <Typography level="body" variant="neutral" sx={{ fontSize: 22 }}>
             The best performing model is custom-tailored. We use your data and
             augment it with other relevant sources to deliver region and
             store-specific predictions.
@@ -108,11 +113,11 @@ export default function StepSection() {
         <Step stepNumber={3}>
           <Typography
             level="h4"
-            sx={{ fontSize: 25, lineHeight: "30px", paddingBottom: "12px" }}
+            sx={{ fontSize: 35, lineHeight: "40px", paddingBottom: "12px" }}
           >
             We show you how much you can save
           </Typography>
-          <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+          <Typography level="body" variant="neutral" sx={{ fontSize: 22 }}>
             We{"'"}ll run our model on your historical sales data to show you
             how much profit you can generate with us.
           </Typography>

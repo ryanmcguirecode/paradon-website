@@ -13,7 +13,6 @@ body {
   background-color: rgb(247, 251, 253);
   background-image: linear-gradient(to bottom, rgb(210, 236, 249), rgb(247, 251, 253));
   background-repeat: no-repeat;
-  /* background-attachment: fixed; */
   background-size: 100%, 100vh;
 }
 

@@ -49,9 +49,10 @@ export default function Home() {
             The Solution
           </Typography>
           <Typography level="h3" sx={{ fontSize: 55 }}>
-            Paradon AI is a Forecasting Co-Pilot and Command Center
+            Paradon AI is the Forecasting Co-Pilot and Command Center
           </Typography>
         </Box>
+        <Divider />
         <Box
           sx={{
             display: "flex",
@@ -60,8 +61,25 @@ export default function Home() {
           }}
         >
           <SolutionSection />
-          <Box sx={{ height: "40px" }} />
+          <Box sx={{ height: "70px" }} />
           {/* <BenefitsSection /> */}
+          <Box
+            sx={{
+              display: "flex",
+              flexDirection: "column",
+              maxWidth: "850px",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginBottom: "30px",
+              alignItems: "center",
+              justifyContent: "center",
+              textAlign: "center",
+            }}
+          >
+            <Typography level="body" variant="neutral" sx={{ fontSize: 20 }}>
+              The Process
+            </Typography>
+          </Box>
           <StepSection />
         </Box>
 

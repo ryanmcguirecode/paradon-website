@@ -373,7 +373,8 @@ export default function SKUCardGrid() {
           paddingTop: "40px",
         }}
       >
-        <Box className={styles.blurGradient}>
+        <Box>
+          {/* className={styles.blurGradient}> */}
           <Box
             sx={{
               display: "flex",

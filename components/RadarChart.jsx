@@ -243,12 +243,14 @@ export default function RadarChart() {
       sx={{
         width: 440,
         height: 440,
+        marginLeft: "30px",
         backgroundColor: "white",
         border: "1px solid #d7dede",
         borderRadius: "10px",
         padding: "5px",
         backgroundColor: "rgb(249, 251, 254)",
         position: "relative", // Important for positioning the lines absolutely
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
         zIndex: 3,
       }}
     >
@@ -302,7 +304,6 @@ export default function RadarChart() {
           sx={{ borderRadius: "12px", padding: "5px", marginTop: "3px" }}
         >
           <AnimatedNumbers
-            //   includeComma
             className={styles.container}
             transitions={(index) => ({
               type:

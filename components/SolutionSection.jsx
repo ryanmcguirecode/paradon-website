@@ -79,6 +79,7 @@ function AccuracyChart() {
         borderRadius: "10px",
         padding: "5px",
         backgroundColor: "rgb(249, 251, 254)",
+        boxShadow: "0 4px 6px rgba(0, 0, 0, 0.1)",
       }}
     >
       <Box
@@ -141,11 +142,65 @@ export default function SolutionSection() {
         <Box
           sx={{
             display: "flex",
-            gap: "15px",
+            // gap: "15px",
           }}
         >
-          <AccuracyChart />
-          {RadarComponent && <RadarComponent />}
+          <Box
+            sx={{
+              width: 500,
+              marginLeft: "30px",
+              textAlign: "center",
+            }}
+          >
+            <AccuracyChart />
+            <Typography
+              sx={{
+                fontSize: 22,
+                marginTop: "20px",
+                marginBottom: "10px",
+              }}
+            >
+              Near Perfect Predictions
+            </Typography>
+            <Typography
+              color="neutral"
+              sx={{
+                maxWidth: 460,
+                paddingLeft: "20px",
+                paddingRight: "20px",
+                paddingBottom: "10px",
+              }}
+            >
+              We've achieved near-perfect accuracy for our clients, and we can
+              do the same for you. We'll prove it by running our model on your
+              historical sales data.
+            </Typography>
+          </Box>
+          <Box sx={{ width: 500, paddingRight: "13px", textAlign: "center" }}>
+            {RadarComponent && <RadarComponent />}
+            <Typography
+              sx={{
+                fontSize: 22,
+                marginTop: "20px",
+                marginBottom: "10px",
+              }}
+            >
+              Reality Modeling
+            </Typography>
+            <Typography
+              color="neutral"
+              sx={{
+                maxWidth: 460,
+                paddingLeft: "22px",
+                paddingRight: "22px",
+                paddingBottom: "10px",
+              }}
+            >
+              We supplement your data with weather, social media trends,
+              holidays, economic metrics, and 100s of other datasets, capturing
+              the real-world events that drive your demand.
+            </Typography>
+          </Box>
         </Box>
       </Box>
     </>
