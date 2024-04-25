@@ -88,7 +88,7 @@ export default function StepSection() {
         <Step stepNumber={1}>
           <Typography
             level="h4"
-            sx={{ fontSize: 35, lineHeight: "40px", paddingBottom: "12px" }}
+            sx={{ fontSize: 30, lineHeight: "40px", paddingBottom: "12px" }}
           >
             We ingest your POS and ordering data
           </Typography>
@@ -100,7 +100,7 @@ export default function StepSection() {
         <Step stepNumber={2}>
           <Typography
             level="h4"
-            sx={{ fontSize: 35, lineHeight: "40px", paddingBottom: "12px" }}
+            sx={{ fontSize: 30, lineHeight: "40px", paddingBottom: "12px" }}
           >
             We build a custom prediction model for your business
           </Typography>
@@ -113,7 +113,7 @@ export default function StepSection() {
         <Step stepNumber={3}>
           <Typography
             level="h4"
-            sx={{ fontSize: 35, lineHeight: "40px", paddingBottom: "12px" }}
+            sx={{ fontSize: 30, lineHeight: "40px", paddingBottom: "12px" }}
           >
             We show you how much you can save
           </Typography>
