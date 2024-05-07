@@ -13,7 +13,7 @@ export default function HeroImage() {
     >
       <ImageContainer width="1230px" height="630px">
         <Image
-          src="/ui-screenshot.png"
+          src="/ui-screenshot-3.png"
           fill
           style={{
             objectFit: "cover",
